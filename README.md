@@ -2,4 +2,4 @@
 
 You can run this project directly in the Python Shell and the result will display in the terminal.
 
-Before running, be sure to install the 'requests' and 'simplejson' modules ('pip3 install requests'/'pip3 install simplejson', respectively).
+Before running, be sure to install the 'requests' and 'simplejson' modules (using pip, conda, or another package manager of your choice).
