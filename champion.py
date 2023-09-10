@@ -11,6 +11,15 @@ data_dict = data.json()
 # Get the relevant information needed (only the champions)
 only_champions = data_dict['data']
 
-# Randomly select a champion
-random_champion = random.choice(list(only_champions))
-print("Random champion generated is:", random_champion)
+champion_list = []
+
+for key in only_champions:
+    champion_list.append(key)
+
+random_champion = random.choice(champion_list)
+print("\nRandom champion generated is:", random_champion, "\n")
+
+# To-Do:
+# Add champion roles (top, mid, bot, jungle)
+# allow user to select which role to generate a champion for
+# create a GUI for the program
