@@ -11,15 +11,6 @@ data_dict = data.json()
 # Get the relevant information needed (only the champions)
 only_champions = data_dict['data']
 
-champ_dict = {}
-
-for key, value in only_champions.items():
-    champ_dict[value['name']] = []
-    
-    # Not used (yet!)
-    champ_dict[value['name']].append(value['title'])
-    champ_dict[value['name']].append(value['info']) 
-    champ_dict[value['name']].append(value['tags'])
-
-random_champion = random.choice(list(champ_dict))
+# Randomly select a champion
+random_champion = random.choice(list(only_champions))
 print("Random champion generated is:", random_champion)
