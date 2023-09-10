@@ -12,7 +12,6 @@ data_dict = data.json()
 only_champions = data_dict['data']
 
 champ_dict = {}
-roles = []
 
 for key, value in only_champions.items():
     champ_dict[value['name']] = []
